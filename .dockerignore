@@ -1,0 +1,10 @@
+._*
+.~lock.*
+.buildpath
+.DS_Store
+.project
+.settings
+.git/**
+vendor/**
+node_modules/**
+.docker/storage/volumes/**
