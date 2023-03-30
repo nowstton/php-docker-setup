@@ -4,7 +4,7 @@ FROM ubuntu:${IMG_DB_VERSION}
 LABEL MAINTAINER="https://github.com/nowstton"
 
 ## ARGs
-ARG USERID = 0
+ARG USERID=0
 ARG WORK_DIR=/var/www
 ARG NODE_LTS_VERSION=18
 ARG DEBIAN_FRONTEND=noninteractive
