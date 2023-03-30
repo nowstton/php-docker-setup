@@ -11,16 +11,10 @@ You can add `xdebug` to your develop container as follow:
 zend_extension=xdebug
 xdebug.mode=debug
 xdebug.client_port=9003
-xdebug.remote_port=9003
 xdebug.discover_client_host=true
-xdebug.remote_host=host.docker.internal
 xdebug.idekey=VSCODE
 xdebug.log=/dev/stdout
-xdebug.remote_enable=on
-xdebug.remote_autostart=on
 xdebug.start_with_request=trigger
-xdebug.coverage_enable=on
-xdebug.coverage_enable_trigger=on
 xdebug.remote_handler=dbgp
 xdebug.connect_timeout_ms=2000
 xdebug.start_upon_error=yes
