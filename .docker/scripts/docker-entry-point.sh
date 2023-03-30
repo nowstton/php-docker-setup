@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ ${USERID} -gt 0 ]; then
-    usermod -u "${USERID}" "${NGINX_PHP_USER}"
+    usermod -u "${USERID}" "${USERNAME}"
 fi
 
 if [ ${#} -gt 0 ]; then

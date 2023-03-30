@@ -5,8 +5,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        - DOCKER_ENV=${DOCKER_ENV?Please set DOCKER_ENV in .env file}
     tty: true
     restart: always
     networks:

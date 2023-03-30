@@ -5,6 +5,7 @@ LABEL MAINTAINER="https://github.com/nowstton"
 
 ## ARGs
 ARG USERID=0
+ARG USERNAME=root
 ARG WORK_DIR=/var/www
 ARG NODE_LTS_VERSION=18
 ARG DEBIAN_FRONTEND=noninteractive
@@ -25,6 +26,7 @@ ENV NGINX_PHP_USER ${NGINX_PHP_USER}
 ENV PHP_VERSION ${PHP_VERSION}
 ENV PHP_SERVICE_NAME ${PHP_SERVICE_NAME}
 ENV USERID ${USERID}
+ENV USERNAME ${USERNAME}
 
 ## Set Timezone to UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
